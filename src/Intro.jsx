@@ -26,6 +26,12 @@ export default function Intro({ textEnter, textLeave }) {
           />
         </svg>
       </div>
+      {/* <img
+        onMouseEnter={textEnter}
+        onMouseLeave={textLeave}
+        className="glowingGem"
+        src="./src/assets/GlowingGem.png"
+      /> */}
     </div>
   );
 }

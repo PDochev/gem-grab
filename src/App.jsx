@@ -1,6 +1,9 @@
 // import "./App.css";
 import HomePage from "./HomePage";
 import Intro from "./Intro";
+import Team from "./Team";
+import "./Container.css";
+import "./Team.css";
 import Spline from "@splinetool/react-spline";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -55,8 +58,10 @@ function App() {
       <HomePage>
         <Intro textEnter={textEnter} textLeave={textLeave} />
       </HomePage>
+      <Team />
     </div>
   );
 }
+
 
 export default App;

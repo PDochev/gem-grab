@@ -14,6 +14,7 @@
   font-size: 15rem;
   font-weight: 600;
   cursor: none;
+  letter-spacing: 1.5rem;
 }
 
 .Intro h2 {
@@ -21,6 +22,7 @@
   font-weight: 400;
   font-size: 4rem;
   cursor: none;
+  letter-spacing: 2rem;
 }
 
 .Intro div {
@@ -44,6 +46,18 @@
 .Intro div:hover {
   transition: transform 600ms;
   transform: scale(0.5);
+}
+
+.glowingGem {
+  position: absolute;
+  z-index: -1;
+  /* opacity: 0.3; */
+  width: 200rem;
+  height: 100rem;
+  left: 65rem;
+  top: -15rem;
+  /* top: 0;
+  right: 0; */
 }
 
 @media only screen and (min-width: 475px) and (max-width: 768px) {
