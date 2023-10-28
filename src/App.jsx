@@ -2,6 +2,7 @@
 import HomePage from "./HomePage";
 import Intro from "./Intro";
 import Team from "./Team";
+import Details from "./Details";
 import "./Container.css";
 import "./Team.css";
 import Spline from "@splinetool/react-spline";
@@ -15,6 +16,12 @@ function App() {
   });
 
   const [cursorVariant, setCursorVariant] = useState("default");
+  const [lightMode, setLightMode] = useState(false);
+
+  const lightModeStyle = {
+    background: lightMode ? "#fff" : "#000",
+    color: lightMode ? "#000" : "#fff",
+  };
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -49,19 +56,19 @@ function App() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div>
+    <div style={lightModeStyle}>
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
-      <HomePage>
-        <Intro textEnter={textEnter} textLeave={textLeave} />
+      <HomePage lightMode={lightMode} setLightMode={setLightMode}>
+        <Intro lightMode={lightMode}  textEnter={textEnter} textLeave={textLeave} />
       </HomePage>
-      <Team />
+      <Team textEnter={textEnter} textLeave={textLeave} />
+      <Details />
     </div>
   );
 }
-
 
 export default App;

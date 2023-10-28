@@ -2,7 +2,16 @@ import "./Navigation.css";
 import "./Container.css";
 import { useState } from "react";
 
-export default function HomePage({ textEnter, textLeave, children }) {
+import moon from "./assets/moon.svg";
+import sun from "./assets/sun.svg";
+
+export default function HomePage({
+  textEnter,
+  textLeave,
+  children,
+  setLightMode,
+  lightMode,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,13 +19,22 @@ export default function HomePage({ textEnter, textLeave, children }) {
   };
   return (
     <div>
-      <Navigation isOpen={isOpen} toggleMenu={toggleMenu} />
+      <Navigation
+        lightMode={lightMode}
+        setLightMode={setLightMode}
+        isOpen={isOpen}
+        toggleMenu={toggleMenu}
+      />
       <div className="Container">{children}</div>
     </div>
   );
 }
 
-function Navigation({ isOpen, toggleMenu }) {
+function Navigation({ isOpen, toggleMenu, setLightMode, lightMode }) {
+  const handleLightMode = () => {
+    setLightMode((light) => !light);
+  };
+
   return (
     <div className="Navigation">
       <div>
@@ -80,7 +98,7 @@ function Navigation({ isOpen, toggleMenu }) {
           </svg>
         )}
 
-        <p>Light</p>
+        <img src={lightMode ? moon : sun} onClick={handleLightMode} />
       </div>
     </div>
   );

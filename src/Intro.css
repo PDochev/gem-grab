@@ -8,6 +8,7 @@
   text-align: center;
   min-height: 100vh;
   height: 70rem;
+  z-index: -1;
 }
 
 .Intro h1 {

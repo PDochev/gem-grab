@@ -1,6 +1,6 @@
 import "./Intro.css";
 
-export default function Intro({ textEnter, textLeave }) {
+export default function Intro({ textEnter, textLeave, lightMode }) {
   return (
     <div className="Intro">
       <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -10,7 +10,7 @@ export default function Intro({ textEnter, textLeave }) {
         Immersive Physical experience
       </h2>
 
-      <div>
+      <div style={{ borderColor: lightMode ? "#000" : "#fff" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

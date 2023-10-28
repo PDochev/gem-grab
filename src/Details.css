@@ -1,0 +1,33 @@
+.Details h1 {
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 6rem;
+  letter-spacing: 3rem;
+  /* position: relative; */
+}
+.Details {
+  /* display: flex;
+  flex-direction: column; */
+}
+.descDetails {
+  /* width: 100rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.descDetails p {
+  /* width: 100rem; */
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  align-self: flex-start;
+}
+
+.descDetails img {
+  /* position: relative; */
+  /* top: 0; */
+  /* right: -30rem; */
+  width: 140rem;
+  height: 70rem;
+  align-self: center;
+  border-radius: 5rem;
+}
