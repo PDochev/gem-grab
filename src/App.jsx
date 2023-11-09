@@ -5,7 +5,7 @@ import Team from "./Team";
 import Details from "./Details";
 import "./Container.css";
 import "./Team.css";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -47,7 +47,7 @@ function App() {
       width: 150,
       x: mousePostion.x - 75,
       y: mousePostion.y - 75,
-      backgroundColor: "blue",
+      backgroundColor: "white",
       mixBlendMode: "difference",
     },
   };
@@ -58,12 +58,17 @@ function App() {
   return (
     <div style={lightModeStyle}>
       <motion.div
+        style={{ backgroundColor: lightMode ? "#000" : "#fff" }}
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
       <HomePage lightMode={lightMode} setLightMode={setLightMode}>
-        <Intro lightMode={lightMode}  textEnter={textEnter} textLeave={textLeave} />
+        <Intro
+          lightMode={lightMode}
+          textEnter={textEnter}
+          textLeave={textLeave}
+        />
       </HomePage>
       <Team textEnter={textEnter} textLeave={textLeave} />
       <Details />

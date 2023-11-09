@@ -45,6 +45,7 @@
 }
 
 .Intro div:hover {
+  /* background-color: grey; */
   transition: transform 600ms;
   transform: scale(0.5);
 }

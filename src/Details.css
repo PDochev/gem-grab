@@ -31,3 +31,14 @@
   align-self: center;
   border-radius: 5rem;
 }
+
+@media (max-width: 475px) {
+  .Details h1 {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .descDetails p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,5 +1,4 @@
 .Navigation {
-  
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
 
@@ -72,6 +71,10 @@
     display: block;
   }
 
+  /* .Navigation img {
+    display: block;
+  } */
+
   .trigger {
     /* display: block; */
     position: fixed;
@@ -86,4 +89,20 @@
 
     gap: 1.5rem;
   }
+}
+
+@media (max-width: 475px) {
+  .Navigation div:first-child img{
+    width: 2rem;
+    height: 2rem
+  }
+  .Navigation div:first-child span{
+    font-size: 1.3rem;
+  }
+
+  .trigger{
+    top: 2rem;
+    right: 2rem;
+  }
+
 }

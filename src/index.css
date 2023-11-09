@@ -22,7 +22,7 @@ body {
 }
 
 .cursor {
-  background-color: blue;
+  /* background-color: blue; */
   /* background: linear-gradient(to right, white, blue); */
 
   height: 32px;

@@ -18,7 +18,7 @@ export default function Details() {
             game will challenge your reflexes, logic, and curiosity as you
             uncover the secrets of the lost artifact.
           </p>
-          <img src="./src/assets/tomb.png" />
+          {/* <img src="./src/assets/tomb.png" /> */}
         </div>
       </div>
     </div>

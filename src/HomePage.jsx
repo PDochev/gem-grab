@@ -5,13 +5,7 @@ import { useState } from "react";
 import moon from "./assets/moon.svg";
 import sun from "./assets/sun.svg";
 
-export default function HomePage({
-  textEnter,
-  textLeave,
-  children,
-  setLightMode,
-  lightMode,
-}) {
+export default function HomePage({ children, setLightMode, lightMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
