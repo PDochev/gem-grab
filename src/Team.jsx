@@ -3,11 +3,11 @@ import "./Container.css";
 import "./Team.css";
 import { motion } from "framer-motion";
 
-import portrait1 from "./assets/portrait1.jpg";
-import portrait2 from "./assets/portrait2.jpg";
+import portrait1 from "./assets/Plamen.png";
+import portrait2 from "./assets/Karahan.png";
 import portrait3 from "./assets/portrait3.jpg";
-import portrait4 from "./assets/portrait4.jpg";
-import portrait5 from "./assets/portrait5.jpg";
+import portrait4 from "./assets/Radu.png";
+import portrait5 from "./assets/Jay.png";
 
 export default function Team({ textEnter, textLeave }) {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -27,14 +27,14 @@ export default function Team({ textEnter, textLeave }) {
 
   const cardImages = [portrait1, portrait2, portrait3, portrait4, portrait5];
   const cardDescriptions = [
-    "Web Developer",
+    "Web Developer , Sound Designer",
     "Technical Artist",
     "Programmer",
     "3D Artist",
     "Programmer",
   ];
   return (
-    <div className="Container">
+    <div>
       <div className="Team">
         <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>
           Team

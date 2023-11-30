@@ -7,8 +7,20 @@
   /* display: flex; */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .Container {
     max-width: 640px;
   }
 }
+
+@media (max-width: 640px) {
+  .Container {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 475px) {
+  .Container {
+    width: 100%;
+  }
+} */

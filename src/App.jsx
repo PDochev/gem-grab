@@ -8,6 +8,8 @@ import "./Team.css";
 // import Spline from "@splinetool/react-spline";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Download from "./Download";
+import Contact from "./Contact";
 
 function App() {
   const [mousePostion, setMousePosition] = useState({
@@ -72,6 +74,8 @@ function App() {
       </HomePage>
       <Team textEnter={textEnter} textLeave={textLeave} />
       <Details />
+      <Download lightMode={lightMode} />
+      <Contact />
     </div>
   );
 }

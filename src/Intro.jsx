@@ -3,6 +3,10 @@ import "./Intro.css";
 export default function Intro({ textEnter, textLeave, lightMode }) {
   return (
     <div className="Intro">
+      {/* <video autoPlay loop muted playsInline className="bg-clip">
+        <source src="./src/assets/BeatSaber.mp4" type="video/mp4" />
+      </video> */}
+
       <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>
         Gem Grab
       </h1>

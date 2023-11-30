@@ -8,6 +8,7 @@
 .Details {
   /* display: flex;
   flex-direction: column; */
+  max-width: 130rem;
 }
 .descDetails {
   /* width: 100rem; */
@@ -22,15 +23,7 @@
   align-self: flex-start;
 }
 
-.descDetails img {
-  /* position: relative; */
-  /* top: 0; */
-  /* right: -30rem; */
-  width: 140rem;
-  height: 70rem;
-  align-self: center;
-  border-radius: 5rem;
-}
+
 
 @media (max-width: 475px) {
   .Details h1 {

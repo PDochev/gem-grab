@@ -5,6 +5,17 @@
   letter-spacing: 1rem;
 }
 
+.Team {
+  min-height: 100vh;
+  /* height: 70rem; */
+  background-image: url("./assets/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
 .Cards {
   object-fit: fill;
   margin-top: 4.8rem; /* 48px */
@@ -67,6 +78,7 @@
   letter-spacing: 1rem;
   font-size: 1.5rem;
   text-align: center;
+  color: white;
 }
 
 @media (max-width: 768px) {

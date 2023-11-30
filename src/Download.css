@@ -1,0 +1,121 @@
+.Download h1 {
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 6rem;
+  letter-spacing: 1.2rem;
+  /* position: relative; */
+}
+.Download {
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.downloads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  /* padding: 2rem 2rem; */
+  gap: 4rem;
+}
+
+.steam,
+.mega {
+  border: 0.2rem solid #282c30;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+.mega img {
+  max-width: 60rem;
+  max-height: 60rem;
+
+  border-radius: 1rem;
+  /* filter: drop-shadow(5px 5px 5px black); */
+}
+
+.steam img {
+  max-width: 60rem;
+  max-height: 60rem;
+  border-radius: 1rem;
+}
+
+.descDownload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.descDownload p {
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  /* margin-top: 2rem; */
+}
+
+.descDownload button {
+  cursor: pointer;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid black; */
+  /* background-color: white; */
+}
+
+.descDownload button:hover {
+}
+
+@media (max-width: 768px) {
+  .Download h1 {
+    font-size: 5rem;
+  }
+
+  .steam,
+  .mega {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .mega img,
+  .steam img {
+    max-width: 50rem;
+    max-height: 50rem;
+  }
+  .descDownload {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .Download h1 {
+    font-size: 3rem;
+  }
+
+  .mega img,
+  .steam img {
+    max-width: 40rem;
+    max-height: 40rem;
+  }
+
+  .steam,
+  .mega {
+    width: 30rem;
+    height: 35rem;
+  }
+  .descDownload {
+    margin-top: 0;
+  }
+  descDownload p {
+    text-align: justify;
+  }
+}

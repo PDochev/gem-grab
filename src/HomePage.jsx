@@ -19,7 +19,7 @@ export default function HomePage({ children, setLightMode, lightMode }) {
         isOpen={isOpen}
         toggleMenu={toggleMenu}
       />
-      <div className="Container">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }
@@ -31,6 +31,7 @@ function Navigation({ isOpen, toggleMenu, setLightMode, lightMode }) {
 
   return (
     <div className="Navigation">
+      
       <div>
         <a>
           <img src="./src/assets/diamond.png" />
