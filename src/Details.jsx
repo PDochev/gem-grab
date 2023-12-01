@@ -5,7 +5,7 @@ export default function Details() {
   return (
    
       <div className="Details">
-        <h1>Details</h1>
+        <h1 id="details">Details</h1>
         <div className="descDetails">
           <p>
             You are an archaeologist who has discovered a hidden tomb in Egypt

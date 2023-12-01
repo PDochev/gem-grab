@@ -21,18 +21,19 @@ export default function Contact() {
   };
 
   const handleSubmition = (e) => {
+    if (!details.from_email || !details.message) return;
     e.preventDefault();
     sendCustomEmail(details);
-    // setDetails({
-    //   from_email: "",
-    //   message: "",
-    // });
+    setDetails({
+      from_email: "",
+      message: "",
+    });
   };
 
   return (
     <div>
       <div className="Contact">
-        <h1>Contact</h1>
+        <h1 id="contact">Contact</h1>
         <form onSubmit={handleSubmition}>
           <label htmlFor="email">Email adress</label>
           <input

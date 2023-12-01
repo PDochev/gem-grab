@@ -36,7 +36,7 @@ export default function Team() {
   return (
     <div>
       <div className="Team">
-        <h1>Team</h1>
+        <h1 id="team">Team</h1>
         <div className="Cards">
           {[0, 1, 2, 3, 4].map((index) => (
             <motion.div

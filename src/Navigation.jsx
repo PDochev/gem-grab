@@ -43,22 +43,32 @@ export default function Navigation({
       <div>
         <a>
           <img src="./src/assets/diamond.png" />
-          <span>Gem Grab</span>
+          <a style={{ color: lightMode ? "#000" : "#fff" }} href="#intro">
+            Gem Grab
+          </a>
         </a>
       </div>
       <nav>
         <ul>
           <li>
-            <a>Team</a>
+            <a style={{ color: lightMode ? "#000" : "#fff" }} href="#team">
+              Team
+            </a>
           </li>
           <li>
-            <a>Details</a>
+            <a style={{ color: lightMode ? "#000" : "#fff" }} href="#details">
+              Details
+            </a>
           </li>
           <li>
-            <a>Download</a>
+            <a style={{ color: lightMode ? "#000" : "#fff" }} href="#download">
+              Download
+            </a>
           </li>
           <li>
-            <a>Contact</a>
+            <a style={{ color: lightMode ? "#000" : "#fff" }} href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

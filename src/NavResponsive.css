@@ -29,6 +29,8 @@
   /* align-items: center; */
   /* gap: 1rem; */
   cursor: pointer;
+  text-decoration: none;
+  
   /* letter-spacing: 0.2rem; */
 }
 
@@ -46,7 +48,6 @@
 }
 
 @media (max-width: 768px) {
- 
 }
 
 @media (max-width: 475px) {

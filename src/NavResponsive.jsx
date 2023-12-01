@@ -1,13 +1,28 @@
 import "./NavResponsive.css";
 
-export default function NavResponsive({ isOpen, setIsOpen }) {
+const light = {
+  backgrloundColor: "white",
+  color: "black",
+};
+
+const dark = {
+  backgrloundColor: "black",
+  color: "white",
+};
+
+export default function NavResponsive({
+  isOpen,
+  setIsOpen,
+  lightMode,
+  setLightMode,
+}) {
   const toggle = () => {
     setIsOpen((open) => !open);
   };
   return (
     <div className="container">
       <svg
-       className="x"
+        className="x"
         onClick={toggle}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -26,18 +41,42 @@ export default function NavResponsive({ isOpen, setIsOpen }) {
       </svg>
 
       <nav className="navigation">
-        <ul>
+        <ul style={{ backgroundColor: lightMode ? "#fff" : "#000" }}>
           <li>
-            <a>Team</a>
+            <a
+              style={{ color: lightMode ? "#000" : "#fff" }}
+              onClick={toggle}
+              href="/#team"
+            >
+              Team
+            </a>
           </li>
           <li>
-            <a>Details</a>
+            <a
+              style={{ color: lightMode ? "#000" : "#fff" }}
+              onClick={toggle}
+              href="/#details"
+            >
+              Details
+            </a>
           </li>
           <li>
-            <a>Download</a>
+            <a
+              style={{ color: lightMode ? "#000" : "#fff" }}
+              onClick={toggle}
+              href="/#download"
+            >
+              Download
+            </a>
           </li>
           <li>
-            <a>Contact</a>
+            <a
+              style={{ color: lightMode ? "#000" : "#fff" }}
+              onClick={toggle}
+              href="/#contact"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

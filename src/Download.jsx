@@ -16,7 +16,7 @@ export default function Download({ lightMode }) {
   return (
     <div className="Container">
       <div className="Download">
-        <h1>Download</h1>
+        <h1 id="download">Download</h1>
         <div className="downloads">
           <div className="steam">
             <img

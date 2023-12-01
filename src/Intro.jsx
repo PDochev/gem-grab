@@ -7,10 +7,16 @@ export default function Intro({ lightMode }) {
         <source src="./src/assets/BeatSaber.mp4" type="video/mp4" />
       </video>
 
-      <h1>Gem Grab</h1>
+      <h1 id="intro">Gem Grab</h1>
       <h2>Immersive Physical experience</h2>
 
-      <div style={{ borderColor: lightMode ? "#000" : "#fff" }}>
+      <a
+        href="#team"
+        style={{
+          borderColor: lightMode ? "#000" : "#fff",
+          color: lightMode ? "#000" : "#fff",
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -25,7 +31,7 @@ export default function Intro({ lightMode }) {
             d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
           />
         </svg>
-      </div>
+      </a>
       {/* <img
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}

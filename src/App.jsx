@@ -13,6 +13,8 @@ import Contact from "./Contact";
 import NavResponsive from "./NavResponsive";
 import Navigation from "./Navigation";
 
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 function App() {
   // const [mousePostion, setMousePosition] = useState({
   //   x: 0,
@@ -69,11 +71,15 @@ function App() {
         // animate={cursorVariant}
       />
       {isOpen ? (
-        <NavResponsive key="foo" isOpen={isOpen} setIsOpen={setIsOpen} />
+        <NavResponsive
+          lightMode={lightMode}
+          setLightMode={setLightMode}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
       ) : (
         <>
           <Navigation
-            key="foo2"
             isOpen={isOpen}
             setIsOpen={setIsOpen}
             lightMode={lightMode}
