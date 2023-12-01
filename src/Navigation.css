@@ -13,8 +13,6 @@
   width: 100%;
 }
 
-
-
 .Navigation ul {
   text-decoration: none;
   list-style-type: none;
@@ -94,17 +92,16 @@
 }
 
 @media (max-width: 475px) {
-  .Navigation div:first-child img{
+  .Navigation div:first-child img {
     width: 2rem;
-    height: 2rem
+    height: 2rem;
   }
-  .Navigation div:first-child span{
+  .Navigation div:first-child span {
     font-size: 1.3rem;
   }
 
-  .trigger{
+  .trigger {
     top: 2rem;
     right: 2rem;
   }
-
 }

@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Download from "./Download";
 import Contact from "./Contact";
+import NavResponsive from "./NavResponsive";
 
 function App() {
   // const [mousePostion, setMousePosition] = useState({
@@ -65,9 +66,10 @@ function App() {
         // variants={variants}
         // animate={cursorVariant}
       />
-      <HomePage lightMode={lightMode} setLightMode={setLightMode}>
+      <NavResponsive />
+      {/* <HomePage lightMode={lightMode} setLightMode={setLightMode}>
         <Intro lightMode={lightMode} />
-      </HomePage>
+      </HomePage> */}
       {/* <Team />
       <Details />
       <Download lightMode={lightMode} />
