@@ -1,5 +1,5 @@
 // import "./App.css";
-import HomePage from "./HomePage";
+
 import Intro from "./Intro";
 import Team from "./Team";
 import Details from "./Details";
@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Download from "./Download";
 import Contact from "./Contact";
 import NavResponsive from "./NavResponsive";
+import Navigation from "./Navigation";
 
 function App() {
   // const [mousePostion, setMousePosition] = useState({
@@ -20,6 +21,7 @@ function App() {
 
   // const [cursorVariant, setCursorVariant] = useState("default");
   const [lightMode, setLightMode] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const lightModeStyle = {
     background: lightMode ? "#fff" : "#000",
@@ -66,14 +68,24 @@ function App() {
         // variants={variants}
         // animate={cursorVariant}
       />
-      <NavResponsive />
-      {/* <HomePage lightMode={lightMode} setLightMode={setLightMode}>
-        <Intro lightMode={lightMode} />
-      </HomePage> */}
-      {/* <Team />
-      <Details />
-      <Download lightMode={lightMode} />
-      <Contact /> */}
+      {isOpen ? (
+        <NavResponsive key="foo" isOpen={isOpen} setIsOpen={setIsOpen} />
+      ) : (
+        <>
+          <Navigation
+            key="foo2"
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            lightMode={lightMode}
+            setLightMode={setLightMode}
+          />
+          <Intro lightMode={lightMode} />
+          {/* <Team />
+          <Details />
+          <Download lightMode={lightMode} />
+          <Contact /> */}
+        </>
+      )}
     </div>
   );
 }

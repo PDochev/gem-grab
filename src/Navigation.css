@@ -1,7 +1,7 @@
 .Navigation {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-
+ 
   position: fixed;
   top: 0;
   min-height: 7.5rem;
@@ -11,6 +11,7 @@
   align-items: center;
   z-index: 100;
   width: 100%;
+   margin: 0 auto;
 }
 
 .Navigation ul {
@@ -37,7 +38,7 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  /* letter-spacing: 0.2rem; */
+  letter-spacing: 0.2rem;
 }
 
 .Navigation > div {
@@ -49,11 +50,11 @@
     display: none;
   }
 
-  /* 
+  
   .Navigation a {
-    margin-top: 2rem;
+    margin-top: 0.6rem;
     align-self: flex-start;
-  } */
+  }
 
   .Navigation ul.isOpen {
     display: block;
@@ -103,5 +104,17 @@
   .trigger {
     top: 2rem;
     right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .Navigation {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 475px) {
+  .Navigation {
+    max-width: 475px;
   }
 }

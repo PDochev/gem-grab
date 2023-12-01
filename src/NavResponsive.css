@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+  /* position: relative; */
   /* margin-top: 10rem; */
 }
 
@@ -34,4 +35,23 @@
 .navigation a:hover {
   color: #a6aab1;
   border-bottom: 2px solid white;
+}
+
+.x {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  margin: 2rem 2rem;
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 475px) {
+  .navigation {
+    font-size: 3.5rem;
+    margin-top: -5rem;
+  }
 }

@@ -1,37 +1,45 @@
 import "./Navigation.css";
 import "./Container.css";
-import { useState } from "react";
 
 import moon from "./assets/moon.svg";
 import sun from "./assets/sun.svg";
 
-export default function HomePage({ children, setLightMode, lightMode }) {
-  const [isOpen, setIsOpen] = useState(false);
+// export default function HomePage({
+//   children,
+//   setLightMode,
+//   lightMode,
+//   isOpen,
+//   setIsOpen,
+// }) {
+//   return (
+//     <div>
+//       <Navigation
+//         lightMode={lightMode}
+//         setLightMode={setLightMode}
+//         isOpen={isOpen}
+//         toggleMenu={toggleMenu}
+//       />
+//       <div>{children}</div>
+//     </div>
+//   );
+// }
 
-  const toggleMenu = () => {
-    setIsOpen((open) => !open);
-  };
-  return (
-    <div>
-      <Navigation
-        lightMode={lightMode}
-        setLightMode={setLightMode}
-        isOpen={isOpen}
-        toggleMenu={toggleMenu}
-      />
-      <div>{children}</div>
-    </div>
-  );
-}
-
-function Navigation({ isOpen, toggleMenu, setLightMode, lightMode }) {
+export default function Navigation({
+  isOpen,
+  setIsOpen,
+  setLightMode,
+  lightMode,
+}) {
   const handleLightMode = () => {
     setLightMode((light) => !light);
   };
 
+  const toggleMenu = () => {
+    setIsOpen((open) => !open);
+  };
+
   return (
     <div className="Navigation">
-      
       <div>
         <a>
           <img src="./src/assets/diamond.png" />
@@ -39,7 +47,7 @@ function Navigation({ isOpen, toggleMenu, setLightMode, lightMode }) {
         </a>
       </div>
       <nav>
-        <ul className={isOpen ? "isOpen" : ""}>
+        <ul>
           <li>
             <a>Team</a>
           </li>
@@ -55,25 +63,7 @@ function Navigation({ isOpen, toggleMenu, setLightMode, lightMode }) {
         </ul>
       </nav>
       <div className="trigger">
-        {isOpen ? (
-          <svg
-            onClick={toggleMenu}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-            width="32"
-            height="32"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        ) : (
+        {!isOpen && (
           <svg
             onClick={toggleMenu}
             xmlns="http://www.w3.org/2000/svg"
