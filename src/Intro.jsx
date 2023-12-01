@@ -1,18 +1,14 @@
 import "./Intro.css";
 
-export default function Intro({ textEnter, textLeave, lightMode }) {
+export default function Intro({ lightMode }) {
   return (
     <div className="Intro">
       {/* <video autoPlay loop muted playsInline className="bg-clip">
         <source src="./src/assets/BeatSaber.mp4" type="video/mp4" />
       </video> */}
 
-      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>
-        Gem Grab
-      </h1>
-      <h2 onMouseEnter={textEnter} onMouseLeave={textLeave}>
-        Immersive Physical experience
-      </h2>
+      <h1>Gem Grab</h1>
+      <h2>Immersive Physical experience</h2>
 
       <div style={{ borderColor: lightMode ? "#000" : "#fff" }}>
         <svg

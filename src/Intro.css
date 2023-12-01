@@ -11,18 +11,18 @@
   z-index: -1;
   /* max-width: 130rem; */
   width: 100%;
-  background-image: url("./assets/bg1.jpg");
+  /* background-image: url("./assets/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-bottom-right-radius: 2rem; */
 }
 
 .Intro h1 {
   font-size: 15rem;
   font-weight: 600;
-  cursor: none;
+  /* cursor: none; */
   letter-spacing: 1.5rem;
 }
 
@@ -30,7 +30,7 @@
   margin-left: 1.5rem;
   font-weight: 400;
   font-size: 4rem;
-  cursor: none;
+  /* cursor: none; */
   letter-spacing: 2rem;
 }
 

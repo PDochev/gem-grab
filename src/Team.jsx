@@ -9,7 +9,7 @@ import portrait3 from "./assets/portrait3.jpg";
 import portrait4 from "./assets/Radu.png";
 import portrait5 from "./assets/Jay.png";
 
-export default function Team({ textEnter, textLeave }) {
+export default function Team() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleCardClick = (index) => {
@@ -36,9 +36,7 @@ export default function Team({ textEnter, textLeave }) {
   return (
     <div>
       <div className="Team">
-        <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>
-          Team
-        </h1>
+        <h1>Team</h1>
         <div className="Cards">
           {[0, 1, 2, 3, 4].map((index) => (
             <motion.div

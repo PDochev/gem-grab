@@ -12,12 +12,12 @@ import Download from "./Download";
 import Contact from "./Contact";
 
 function App() {
-  const [mousePostion, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  // const [mousePostion, setMousePosition] = useState({
+  //   x: 0,
+  //   y: 0,
+  // });
 
-  const [cursorVariant, setCursorVariant] = useState("default");
+  // const [cursorVariant, setCursorVariant] = useState("default");
   const [lightMode, setLightMode] = useState(false);
 
   const lightModeStyle = {
@@ -25,57 +25,53 @@ function App() {
     color: lightMode ? "#000" : "#fff",
   };
 
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", mouseMove);
+  // useEffect(() => {
+  //   const mouseMove = (e) => {
+  //     setMousePosition({
+  //       x: e.clientX,
+  //       y: e.clientY,
+  //     });
+  //   };
+  //   window.addEventListener("mousemove", mouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", mouseMove);
+  //   };
+  // }, []);
 
-  const variants = {
-    default: {
-      x: mousePostion.x - 16,
-      y: mousePostion.y - 16,
-    },
-    text: {
-      height: 150,
-      width: 150,
-      x: mousePostion.x - 75,
-      y: mousePostion.y - 75,
-      backgroundColor: "white",
-      mixBlendMode: "difference",
-    },
-  };
+  // const variants = {
+  //   default: {
+  //     x: mousePostion.x - 16,
+  //     y: mousePostion.y - 16,
+  //   },
+  //   text: {
+  //     height: 150,
+  //     width: 150,
+  //     x: mousePostion.x - 75,
+  //     y: mousePostion.y - 75,
+  //     backgroundColor: "white",
+  //     mixBlendMode: "difference",
+  //   },
+  // };
 
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+  // const textEnter = () => setCursorVariant("text");
+  // const textLeave = () => setCursorVariant("default");
 
   return (
     <div style={lightModeStyle}>
       <motion.div
         style={{ backgroundColor: lightMode ? "#000" : "#fff" }}
         className="cursor"
-        variants={variants}
-        animate={cursorVariant}
+        // variants={variants}
+        // animate={cursorVariant}
       />
       <HomePage lightMode={lightMode} setLightMode={setLightMode}>
-        <Intro
-          lightMode={lightMode}
-          textEnter={textEnter}
-          textLeave={textLeave}
-        />
+        <Intro lightMode={lightMode} />
       </HomePage>
-      <Team textEnter={textEnter} textLeave={textLeave} />
+      {/* <Team />
       <Details />
       <Download lightMode={lightMode} />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

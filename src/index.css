@@ -21,9 +21,8 @@ body {
   overflow-x: hidden;
 }
 
-.cursor {
-  /* background-color: blue; */
-  /* background: linear-gradient(to right, white, blue); */
+/* .cursor {
+
 
   height: 32px;
   width: 32px;
@@ -34,6 +33,5 @@ body {
   pointer-events: none;
   filter: blur(0.3rem);
   border: 1px solid white;
-  /* z-index: 2; */
-  /* backdrop-filter: blur(50px); */
-}
+ 
+} */
