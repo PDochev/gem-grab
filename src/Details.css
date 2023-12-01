@@ -1,19 +1,31 @@
-.Details h1 {
-  font-size: 8rem;
-  text-align: center;
-  padding-top: 6rem;
-  letter-spacing: 3rem;
-  /* position: relative; */
-}
 .Details {
   /* display: flex;
   flex-direction: column; */
-  max-width: 130rem;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
 }
+
+.Details h1 {
+  font-size: 8rem;
+  text-align: center;
+  /* padding-top: 6rem; */
+  letter-spacing: 3rem;
+  padding-top: 8rem;
+  /* position: relative; */
+}
+
 .descDetails {
-  /* width: 100rem; */
+  max-width: 130rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* width: 100rem; */
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .descDetails p {
@@ -22,8 +34,6 @@
   letter-spacing: 0.5rem;
   align-self: flex-start;
 }
-
-
 
 @media (max-width: 475px) {
   .Details h1 {

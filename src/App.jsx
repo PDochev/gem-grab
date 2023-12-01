@@ -80,10 +80,10 @@ function App() {
             setLightMode={setLightMode}
           />
           <Intro lightMode={lightMode} />
-          {/* <Team />
-          <Details />
+          <Team />
+          {/* <Details /> */}
           <Download lightMode={lightMode} />
-          <Contact /> */}
+          <Contact />
         </>
       )}
     </div>

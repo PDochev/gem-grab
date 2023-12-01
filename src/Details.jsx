@@ -3,7 +3,7 @@ import "./Details.css";
 
 export default function Details() {
   return (
-    <div className="Container">
+   
       <div className="Details">
         <h1>Details</h1>
         <div className="descDetails">
@@ -21,6 +21,6 @@ export default function Details() {
           {/* <img src="./src/assets/tomb.png" /> */}
         </div>
       </div>
-    </div>
+ 
   );
 }

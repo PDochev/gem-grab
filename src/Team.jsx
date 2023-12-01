@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import portrait1 from "./assets/Plamen.png";
 import portrait2 from "./assets/Karahan.png";
-import portrait3 from "./assets/portrait3.jpg";
+import portrait3 from "./assets/Vitalie.png";
 import portrait4 from "./assets/Radu.png";
 import portrait5 from "./assets/Jay.png";
 

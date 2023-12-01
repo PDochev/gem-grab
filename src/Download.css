@@ -18,6 +18,7 @@
   margin-top: 2rem;
   /* padding: 2rem 2rem; */
   gap: 4rem;
+  
 }
 
 .steam,
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
+  /* box-shadow: 3px 4px 7px -5px white; */
 }
 
 .mega img {
@@ -77,12 +79,12 @@
 
 @media (max-width: 768px) {
   .Download h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .steam,
   .mega {
-    width: 40rem;
+    width: 50rem;
     height: 40rem;
   }
 
@@ -94,11 +96,15 @@
   .descDownload {
     margin-top: 0;
   }
+  .descDownload button {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (max-width: 475px) {
   .Download h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    text-align: center;
   }
 
   .mega img,
@@ -109,7 +115,7 @@
 
   .steam,
   .mega {
-    width: 30rem;
+    width: 35rem;
     height: 35rem;
   }
   .descDownload {
