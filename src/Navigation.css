@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   min-height: 7.5rem;
-  padding: 0px 2rem;
+  padding: 0rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -52,6 +52,11 @@
     display: none;
   }
 
+  .Navigation div:first-child img {
+    /* width: 2rem; */
+    height: 2rem;
+  }
+
   .Navigation a {
     margin-top: 0.6rem;
     align-self: flex-start;
@@ -90,6 +95,17 @@
     /* flex-direction: row; */
 
     gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .Navigation div:first-child img {
+    /* width: 2rem; */
+    height: 2rem;
+  }
+
+  .Navigation ul li {
+    margin: 0 2rem;
   }
 }
 

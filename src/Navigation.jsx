@@ -41,11 +41,9 @@ export default function Navigation({
   return (
     <div className="Navigation">
       <div>
-        <a>
+        <a href="#intro">
           <img src="./src/assets/diamond.png" />
-          <a style={{ color: lightMode ? "#000" : "#fff" }} href="#intro">
-            Gem Grab
-          </a>
+          <span style={{ color: lightMode ? "#000" : "#fff" }}>Gem Grab</span>
         </a>
       </div>
       <nav>

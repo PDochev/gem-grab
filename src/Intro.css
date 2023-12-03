@@ -59,7 +59,7 @@
   /* align-self: center; */
   margin-top: 20rem;
   text-decoration: none;
-  color: white  ;
+  color: white;
   /* animation: out 1s; */
   /* display: flex; */
   transition: transform 600ms;
@@ -90,7 +90,7 @@
 @media only screen and (min-width: 475px) and (max-width: 768px) {
   .Intro h1 {
     margin-top: 7rem;
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .Intro h2 {
     font-size: 1.5rem;
@@ -102,6 +102,17 @@
     height: 100dvh;
     object-fit: cover;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .Intro h1 {
+    /* margin-top: 7rem; */
+    font-size: 9rem;
+  }
+
+  .Intro h2{
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+  } 
 }
 
 @media (max-width: 475px) {

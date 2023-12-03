@@ -100,25 +100,51 @@ form button {
 } */
 
 @media (max-width: 768px) {
+  .Contact h1 {
+    font-size: 6rem;
+    /* letter-spacing: 0.5rem; */
+  }
   form {
-    width: 50rem;
+    width: 40rem;
     margin: 0 auto;
     margin-top: 2rem;
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .Contact h1 {
+    font-size: 9rem;
+    /* letter-spacing: 0.5rem; */
+  }
+
+  .Contact {
+    margin-bottom: -3rem;
+  }
+
+  footer {
+    /* margin-top: -3rem; */
+  }
+  form {
+    width: 60rem;
+  }
+  form textarea {
+    height: 40rem;
+  }
+}
+
 @media (max-width: 475px) {
   .Contact h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
   }
 
   form {
-    width: 35rem;
+    width: 25rem;
     margin: 0 auto;
     margin-top: 2rem;
   }
 
   form textarea {
-    height: 25rem;
+    height: 15rem;
   }
 }

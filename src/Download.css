@@ -7,6 +7,7 @@
 }
 .Download {
   /* font-family: "Poppins", sans-serif; */
+  min-height: 100vh;
 }
 
 .downloads {
@@ -18,7 +19,6 @@
   margin-top: 2rem;
   /* padding: 2rem 2rem; */
   gap: 4rem;
-  
 }
 
 .steam,
@@ -79,13 +79,17 @@
 
 @media (max-width: 768px) {
   .Download h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   .steam,
   .mega {
-    width: 50rem;
+    width: 40rem;
     height: 40rem;
+  }
+
+  .downloads {
+    margin-bottom: 1rem;
   }
 
   .mega img,
@@ -101,27 +105,68 @@
   }
 }
 
-@media (max-width: 475px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
   .Download h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .mega img,
-  .steam img {
-    max-width: 40rem;
-    max-height: 40rem;
+    font-size: 9rem;
   }
 
   .steam,
   .mega {
-    width: 35rem;
-    height: 35rem;
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .downloads {
+    margin-bottom: 3rem;
+  }
+
+  .descDownload p {
+    font-size: 1.5rem;
+  }
+
+  .descDownload button {
+    /* font-size: 1rem; */
+  }
+  /* .mega img,
+  .steam img {
+    max-width: 80rem;
+    max-height: 80rem;
+   
+  } */
+}
+
+@media (max-width: 475px) {
+  .Download h1 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  .downloads {
+    /* margin: 0 auto; */
+  }
+  .mega img,
+  .steam img {
+    max-width: 30rem;
+    max-height: 30rem;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+  }
+
+  .steam,
+  .mega {
+    width: 25rem;
+    height: 25rem;
   }
   .descDownload {
     margin-top: 0;
   }
-  descDownload p {
+  .descDownload p {
     text-align: justify;
+    font-size: 1rem;
+  }
+  .descDownload button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
