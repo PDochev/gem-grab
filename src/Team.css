@@ -14,9 +14,12 @@
   background-position: center;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
+  box-shadow: 3px 4px 30px -4px black;
   /* margin: 0 1rem; */
   /* z-index: -1; */
 }
+
+
 
 .Cards {
   object-fit: fill;

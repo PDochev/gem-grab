@@ -7,7 +7,7 @@ export default function Details() {
       <h1 id="details">Details</h1>
       <div className="details">
         <div className="det-img">
-          <img src="./src/assets/det1.png" />
+          <img src="./src/assets/det3.jpeg" />
         </div>
         <div className="DetailText">
           <h2>SEASON 12</h2>
@@ -35,7 +35,7 @@ export default function Details() {
       </div>
       <div className="details">
         <div className="det-img">
-          <img src="./src/assets/det3.jpeg" />
+          <img src="./src/assets/det1.png" />
         </div>
         <div className="DetailText">
           <h2>SEASON 12</h2>
