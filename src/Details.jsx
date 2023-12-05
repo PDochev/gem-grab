@@ -3,24 +3,36 @@ import "./Details.css";
 
 export default function Details() {
   return (
-   
-      <div className="Details">
-        <h1 id="details">Details</h1>
-        <div className="descDetails">
+    <div className="Details">
+      <h1 id="details">Details</h1>
+      <div className="details">
+        <div className="det-img">
+          <img src="./src/assets/det2.jpg" />
+        </div>
+        <div className="DetailText">
+          <h2>SEASON 12</h2>
           <p>
-            You are an archaeologist who has discovered a hidden tomb in Egypt
-            that contains a mysterious artifact. You must navigate through the
-            tomb’s traps and puzzles, switching between three different paths
-            and collecting or avoiding various objects along the way. The game
-            uses VR to create a realistic and immersive experience of exploring
-            the temple environment. You will have to move your body to dodge
-            obstacles, solve riddles, and interact with the environment. The
-            game will challenge your reflexes, logic, and curiosity as you
-            uncover the secrets of the lost artifact.
+            This Season, a mysterious hacktivist named Zero-Day has left the
+            shadows, taking control of Neo Tokyo Arena. Find your place in a
+            world of digital decay with Rocket Pass Premium and earn dozens of
+            new items, including the Porsche 911 Turbo.
           </p>
-          {/* <img src="./src/assets/tomb.png" /> */}
         </div>
       </div>
- 
+      <div className="details">
+        <div className="DetailText">
+          <h2>SEASON 12</h2>
+          <p>
+            This Season, a mysterious hacktivist named Zero-Day has left the
+            shadows, taking control of Neo Tokyo Arena. Find your place in a
+            world of digital decay with Rocket Pass Premium and earn dozens of
+            new items, including the Porsche 911 Turbo.
+          </p>
+        </div>
+        <div className="det-img">
+          <img src="./src/assets/det3.jpg" />
+        </div>
+      </div>
+    </div>
   );
 }

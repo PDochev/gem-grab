@@ -87,7 +87,7 @@ function App() {
           />
           <Intro lightMode={lightMode} />
           <Team />
-          {/* <Details /> */}
+          <Details />
           <Download lightMode={lightMode} />
           <Contact />
         </>
