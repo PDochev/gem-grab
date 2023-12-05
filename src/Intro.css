@@ -11,6 +11,8 @@
   /* height: 70rem; */
   z-index: 1;
   position: relative;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
   /* max-width: 130rem; */
   /* width: 100%; */
   /* background-image: url("./assets/bg1.jpg");
@@ -38,6 +40,7 @@
   height: 100vh;
   height: 100dvh;
   object-fit: cover;
+
   /* height: auto; */
 }
 
@@ -109,10 +112,10 @@
     font-size: 9rem;
   }
 
-  .Intro h2{
+  .Intro h2 {
     font-size: 3rem;
     letter-spacing: 0.7rem;
-  } 
+  }
 }
 
 @media (max-width: 475px) {
