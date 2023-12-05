@@ -9,7 +9,7 @@
   font-size: 8rem;
   text-align: center;
   /* padding-top: 6rem; */
-  letter-spacing: 3rem;
+  letter-spacing: 1rem;
   padding-top: 8rem;
 
   /* position: relative; */
@@ -21,16 +21,16 @@
 }
 
 .details {
-  border: 0.2rem solid #282c30;
-  /* border-radius: 0.5rem; */
+  border: 0.1rem solid #282c30;
+  border-radius: 0.5rem;
   /* width: 100%; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin: 0 rem; */
+  /* background-color: #1685b7; */
+
   margin-top: 3rem;
+
   /* width: 150rem; */
   /* height: 70rem; */
   /* background-color: grey; */
@@ -38,6 +38,10 @@
 
   /* width: 50rem;
   height: 50rem; */
+}
+
+.details:hover {
+  /* box-shadow: 5px 4px 15px -6px #ef233c; */
 }
 
 .det-img img {
@@ -48,21 +52,28 @@
   /* width: 60%; */
   /* max-width: 80%; */
   /* max-width: 100%; */
-  height: 70rem;
+  /* height: 70rem; */
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   align-self: flex-start;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* margin: 0; */
+
+  filter: grayscale();
+  padding: 1rem 1rem;
+  border-radius: 1.5rem;
+}
+.det-img img:hover {
+  filter: none;
 }
 
 .det-img {
-  /* width: 50rem; */
+  width: 50%;
+  /* border-right: 2px solid white; */
 
-  /* align-self: flex-start; */
-  /* height: 100%; */
+  /* align-self: center; */
+  /* height: auto; */
 }
 
 .DetailText {
@@ -70,6 +81,9 @@
   width: 50rem;
   margin: 0 auto;
   align-self: center;
+  border-left: 0.15rem solid #1685b7;
+  /* padding-left: 0.5rem; */
+  padding: 1rem 1rem;
 }
 .DetailText p {
   font-size: 1.5rem;
@@ -109,18 +123,20 @@
   .DetailText {
     width: 30rem;
   }
+
   .det-img img {
     height: 30rem;
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 900px) {
-  /* .det-img img{
-    height: 30rem;
-    width: 100%;
-  } */
+/* @media (max-width: 1280px) {
+  .det-img {
+   
+  }
+} */
 
+@media only screen and (min-width: 768px) and (max-width: 900px) {
   .det-img {
     width: 100%;
   }
@@ -129,6 +145,7 @@
     margin: 1rem 0;
   }
 }
+
 @media (max-width: 475px) {
   .Details h1 {
     font-size: 6rem;
@@ -148,10 +165,8 @@
   }
 
   .DetailText p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-
-    /* margin: 0 auto; */
   }
 
   .DetailText {
