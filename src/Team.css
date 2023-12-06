@@ -19,8 +19,6 @@
   /* z-index: -1; */
 }
 
-
-
 .Cards {
   object-fit: fill;
   margin-top: 4.8rem; /* 48px */
@@ -38,9 +36,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 3px 4px 7px -5px black;
-  -webkit-box-shadow: 3px 4px 7px -5px black;
 
+  box-shadow: 0px 4px 12px -6px black;
+  /* -webkit-box-shadow: 0px 4px 15px -6px black; */
   filter: grayscale();
 }
 

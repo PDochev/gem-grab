@@ -3,13 +3,13 @@ import "./Download.css";
 
 const darkModeStyle = {
   backgroundColor: "black",
-  border: "0.1rem solid #282c30",
+  border: "0.2rem solid #282c30",
   color: "white",
 };
 
 const lightModeStyle = {
   backgroundColor: "white",
-  border: "0.1rem solid black",
+  border: "0.2rem solid black",
 };
 
 export default function Download({ lightMode }) {
