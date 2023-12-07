@@ -24,6 +24,7 @@ export default function Contact() {
     if (!details.from_email || !details.message) return;
     e.preventDefault();
     sendCustomEmail(details);
+    alert("Your message has been sent!");
     setDetails({
       from_email: "",
       message: "",

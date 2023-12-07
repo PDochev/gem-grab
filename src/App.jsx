@@ -22,7 +22,7 @@ function App() {
   // });
 
   // const [cursorVariant, setCursorVariant] = useState("default");
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   const lightModeStyle = {

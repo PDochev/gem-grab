@@ -2,12 +2,12 @@ import "./Intro.css";
 
 export default function Intro({ lightMode }) {
   return (
-    <div className="Intro">
+    <div id="intro" className="Intro">
       <video autoPlay loop muted playsInline className="bg-clip">
         <source src="./src/assets/gem-grab-video.mp4" type="video/mp4" />
       </video>
 
-      <h1 id="intro">Gem Grab</h1>
+      <h1>Gem Grab</h1>
       <h2>Immersive Physical experience</h2>
 
       <a
