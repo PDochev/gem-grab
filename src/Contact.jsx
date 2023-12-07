@@ -40,6 +40,7 @@ export default function Contact() {
             name="from_email"
             value={details.from_email}
             type="email"
+            // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             placeholder="Enter your email"
             id="email"
             onChange={handleDetailsChange}

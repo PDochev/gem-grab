@@ -10,23 +10,21 @@ export default function Details() {
           <img src="./src/assets/det3.jpeg" />
         </div>
         <div className="DetailText">
-          <h2>SEASON 12</h2>
+          <h2>Ready for heart racing adventure in VR </h2>
           <p>
-            This Season, a mysterious hacktivist named Zero-Day has left the
-            shadows, taking control of Neo Tokyo Arena. Find your place in a
-            world of digital decay with Rocket Pass Premium and earn dozens of
-            new items, including the Porsche 911 Turbo.
+            What if exercing and gaming can be done together, wait no further,
+            we introduce to you gem grab a fast paste, thrilling, endless runner
+            game, where it is up to you gem grabbers, to grab as many gems as
+            you can.
           </p>
         </div>
       </div>
       <div className="details">
         <div className="DetailText">
-          <h2>SEASON 12</h2>
+          <h2>How to play</h2>
           <p>
-            This Season, a mysterious hacktivist named Zero-Day has left the
-            shadows, taking control of Neo Tokyo Arena. Find your place in a
-            world of digital decay with Rocket Pass Premium and earn dozens of
-            new items, including the Porsche 911 Turbo.
+            You can try our free demo or buy our game to experiance levels and
+            fun all whilst exerczing.
           </p>
         </div>
         <div className="det-img">
@@ -38,13 +36,8 @@ export default function Details() {
           <img src="./src/assets/det1.png" />
         </div>
         <div className="DetailText">
-          <h2>SEASON 12</h2>
-          <p>
-            This Season, a mysterious hacktivist named Zero-Day has left the
-            shadows, taking control of Neo Tokyo Arena. Find your place in a
-            world of digital decay with Rocket Pass Premium and earn dozens of
-            new items, including the Porsche 911 Turbo.
-          </p>
+          <h2>Grab your pickaxe</h2>
+          <p>Set new high scores, whilst excersizing</p>
         </div>
       </div>
     </div>

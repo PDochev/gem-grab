@@ -4,7 +4,7 @@ export default function Intro({ lightMode }) {
   return (
     <div className="Intro">
       <video autoPlay loop muted playsInline className="bg-clip">
-        <source src="./src/assets/BeatSaber.mp4" type="video/mp4" />
+        <source src="./src/assets/gem-grab-video.mp4" type="video/mp4" />
       </video>
 
       <h1 id="intro">Gem Grab</h1>
