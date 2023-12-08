@@ -1,10 +1,12 @@
 import "./Intro.css";
 
+import videoClip from "./assets/gem-grab-video.mp4";
+
 export default function Intro({ lightMode }) {
   return (
     <div id="intro" className="Intro">
       <video autoPlay loop muted playsInline className="bg-clip">
-        <source src="./src/assets/gem-grab-video.mp4" type="video/mp4" />
+        <source src={videoClip} type="video/mp4" />
       </video>
 
       <h1>Gem Grab</h1>

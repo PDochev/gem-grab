@@ -1,6 +1,9 @@
 import "./Container.css";
 import "./Download.css";
 
+import steamPic from "./assets/steam-mob.png";
+import megaPic from "./assets/mega.png";
+
 const darkModeStyle = {
   backgroundColor: "black",
   border: "0.2rem solid #282c30",
@@ -20,7 +23,7 @@ export default function Download({ lightMode }) {
         <div className="downloads">
           <div className="steam">
             <img
-              src="./src/assets/steam-mob.png"
+              src={steamPic}
               alt="steam logo image"
               href="https://store.steampowered.com/"
             />
@@ -41,7 +44,7 @@ export default function Download({ lightMode }) {
             </div>
           </div>
           <div className="mega">
-            <img src="./src/assets/mega.png" alt="mega logo image" />
+            <img src={megaPic} alt="mega logo image" />
             <div className="descDownload">
               <p>
                 You can download a demo of the game from the link below. The

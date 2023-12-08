@@ -1,13 +1,17 @@
 import "./Container.css";
 import "./Details.css";
 
+import detailsPic1 from "./assets/det3.jpeg";
+import detailsPic2 from "./assets/det2.jpeg";
+import detailsPic3 from "./assets/det1.png";
+
 export default function Details() {
   return (
     <div className="Details">
       <h1 id="details">Details</h1>
       <div className="details">
         <div className="det-img">
-          <img src="./src/assets/det3.jpeg" />
+          <img src={detailsPic1} />
         </div>
         <div className="DetailText">
           <h2>Ready for heart racing adventure in VR </h2>
@@ -28,12 +32,12 @@ export default function Details() {
           </p>
         </div>
         <div className="det-img">
-          <img src="./src/assets/det2.jpeg" />
+          <img src={detailsPic2} />
         </div>
       </div>
       <div className="details">
         <div className="det-img">
-          <img src="./src/assets/det1.png" />
+          <img src={detailsPic3} />
         </div>
         <div className="DetailText">
           <h2>Grab your pickaxe</h2>
