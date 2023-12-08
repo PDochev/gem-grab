@@ -50,10 +50,6 @@
   border-radius: 1rem;
 }
 
-.downloads a {
-  color: black;
-}
-
 .descDownload {
   display: flex;
   flex-direction: column;

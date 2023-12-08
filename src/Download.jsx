@@ -50,7 +50,12 @@ export default function Download({ lightMode }) {
                 You can download a demo of the game from the link below. The
                 game is available on MEGA.
               </p>
-              <a href="https://mega.nz/" target="_blank" rel="noreferrer">
+              <a
+                style={{ color: "black" }}
+                href="https://mega.nz/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button style={lightMode ? lightModeStyle : darkModeStyle}>
                   Download
                 </button>
