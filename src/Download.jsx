@@ -33,6 +33,7 @@ export default function Download({ lightMode }) {
                 for Meta Quest 2 on Steam.
               </p>
               <a
+                aria-label="Download"
                 href="https://store.steampowered.com/"
                 target="_blank"
                 rel="noreferrer"
@@ -52,7 +53,6 @@ export default function Download({ lightMode }) {
               </p>
               <a
                 aria-label="Download"
-                style={{ textDecoration: "none", color: "inherit" }}
                 href="https://mega.nz/"
                 target="_blank"
                 rel="noreferrer"

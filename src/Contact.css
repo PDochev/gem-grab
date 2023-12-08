@@ -138,6 +138,7 @@ form button:hover {
 @media only screen and (min-width: 320px) and (max-width: 475px) {
   form {
     width: 30rem;
+    height: 35rem;
   }
 }
 
@@ -173,4 +174,3 @@ form button:hover {
     margin-bottom: 1rem;
   }
 }
-
