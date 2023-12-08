@@ -1,6 +1,6 @@
 import "./Intro.css";
 
-import videoClip from "./assets/gem-grab-video.mp4";
+import videoClip from "./assets/gem-grab.mp4";
 
 export default function Intro({ lightMode }) {
   return (

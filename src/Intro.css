@@ -101,7 +101,6 @@
 
   .Intro a {
     border: 0.15rem solid white;
-    
   }
   .bg-clip {
     width: 100%;
@@ -160,7 +159,7 @@
     font-size: 2rem;
     letter-spacing: 0.5rem;
   }
-} 
+}
 
 /* @media screen and (max-width: 1200px) {
   
