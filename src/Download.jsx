@@ -51,7 +51,8 @@ export default function Download({ lightMode }) {
                 game is available on MEGA.
               </p>
               <a
-                style={{ color: "black" }}
+                aria-label="Download"
+                style={{ textDecoration: "none", color: "inherit" }}
                 href="https://mega.nz/"
                 target="_blank"
                 rel="noreferrer"
