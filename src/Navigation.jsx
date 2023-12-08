@@ -3,6 +3,7 @@ import "./Container.css";
 
 import moon from "./assets/moon.svg";
 import sun from "./assets/sun.svg";
+import diamondLogo from "./assets/diamond.png";
 
 // export default function HomePage({
 //   children,
@@ -42,7 +43,7 @@ export default function Navigation({
     <div className="Navigation">
       <div>
         <a href="#intro">
-          <img src="./src/assets/diamond.png" />
+          <img src={diamondLogo} />
           <span style={{ color: lightMode ? "#000" : "#fff" }}>Gem Grab</span>
         </a>
       </div>
