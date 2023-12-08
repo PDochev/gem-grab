@@ -11,7 +11,7 @@ export default function Details() {
       <h1 id="details">Details</h1>
       <div className="details">
         <div className="det-img">
-          <img src={detailsPic1} />
+          <img loading="lazy" src={detailsPic1} />
         </div>
         <div className="DetailText">
           <h2>Ready for heart racing adventure in VR </h2>
@@ -32,12 +32,12 @@ export default function Details() {
           </p>
         </div>
         <div className="det-img">
-          <img src={detailsPic2} />
+          <img loading="lazy" src={detailsPic2} />
         </div>
       </div>
       <div className="details">
         <div className="det-img">
-          <img src={detailsPic3} />
+          <img loading="lazy" src={detailsPic3} />
         </div>
         <div className="DetailText">
           <h2>Grab your pickaxe</h2>

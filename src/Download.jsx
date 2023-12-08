@@ -22,11 +22,7 @@ export default function Download({ lightMode }) {
         <h1 id="download">Download</h1>
         <div className="downloads">
           <div className="steam">
-            <img
-              src={steamPic}
-              alt="steam logo image"
-              href="https://store.steampowered.com/"
-            />
+            <img loading="lazy" src={steamPic} alt="steam logo image" />
             <div className="descDownload">
               <p>
                 You can buy the game from the link below. The game is available
@@ -45,7 +41,7 @@ export default function Download({ lightMode }) {
             </div>
           </div>
           <div className="mega">
-            <img src={megaPic} alt="mega logo image" />
+            <img loading="lazy" src={megaPic} alt="mega logo image" />
             <div className="descDownload">
               <p>
                 You can download a demo of the game from the link below. The
