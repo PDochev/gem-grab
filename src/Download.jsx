@@ -49,7 +49,7 @@ export default function Download({ lightMode }) {
               </p>
               <a
                 aria-label="Download"
-                href="https://mega.nz/"
+                href="https://mega.nz/file/54YThKDI#HxyMxfFwSF9LxjfoTwx935lI0KMAEI5EOYIwYhDKKAc"
                 target="_blank"
                 rel="noreferrer"
               >
