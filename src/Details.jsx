@@ -14,7 +14,7 @@ export default function Details() {
           <img loading="lazy" src={detailsPic1} />
         </div>
         <div className="DetailText">
-          <h2>Ready for heart racing adventure in VR? </h2>
+          <h2>Ready for a heart racing adventure in VR? </h2>
           <p>
             What if exercing and gaming can be done together? Wait no further!
             We introduce to you gem grab, a fast pace, thrilling, endless runner
